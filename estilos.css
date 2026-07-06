@@ -49,15 +49,15 @@ button{
 
 #btnAzul{
 
-    background:rgb(167, 177, 186);
-    color:rgb(1, 0, 0);
+    background:rgb(186, 123, 161); 
+    color:rgb(247, 249, 249);
 
 }
 
 #btnRojo{
 
-    background:rgb(167, 177, 186);
-    color:rgb(1, 0, 0);
+    background:rgb(186, 123, 161);
+    color:rgb(247, 249, 249);
     position: relative;
 }
 
