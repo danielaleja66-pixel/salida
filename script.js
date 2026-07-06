@@ -16,33 +16,23 @@ const textos = [
 ];
 
 let indice = 0;
-
-// tamaños
 let tamañoSi = 1;
 let tamañoNo = 1;
-
-// estado de huida
 let modoEscape = false;
 
 rojo.addEventListener("click", () => {
     mensaje.textContent = "";
-    // SÍ crece
     tamañoSi += 0.2;
-    azul.style.transform = `scale(${tamañoSi})`;
-
-    // NO se hace pequeño
+    azul.style.transform = `scale(${tamañoSi})`
     tamañoNo -= 0.08;
     if (tamañoNo < 0.15) tamañoNo = 0.15;
 
     rojo.style.transform = `scale(${tamañoNo})`;
 
-    // cambiar texto
     if (indice < textos.length - 1) {
         indice++;
         subtitulo.textContent = textos[indice];
     }
-
-    // activar modo escape cuando es muy pequeño
     if (tamañoNo <= 0.4) {
         modoEscape = true;
         rojo.style.position = "absolute";
@@ -50,7 +40,6 @@ rojo.addEventListener("click", () => {
 
 });
 
-// 🧠 huir del cursor
 document.addEventListener("mousemove", (e) => {
 
     if (!modoEscape) return;
@@ -62,7 +51,7 @@ document.addEventListener("mousemove", (e) => {
 
     const distancia = Math.sqrt(dx * dx + dy * dy);
 
-    // si el mouse está cerca, huye
+    
     if (distancia < 120) {
 
         const moveX = (Math.random() - 0.5) * 200;
@@ -71,7 +60,6 @@ document.addEventListener("mousemove", (e) => {
         let newX = rect.left + moveX;
         let newY = rect.top + moveY;
 
-        // límites de pantalla
         newX = Math.max(0, Math.min(window.innerWidth - rect.width, newX));
         newY = Math.max(0, Math.min(window.innerHeight - rect.height, newY));
 
