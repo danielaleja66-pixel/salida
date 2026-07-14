@@ -6,9 +6,9 @@ const subtitulo = document.getElementById("subtitulo");
 const textos = [
     "Oyeee no seas grosera",
     "Intenta de nuevo",
-    "Prometo hacerte reír",
-    "Podemos cantar en el carro",
-    "Te voy a dar comiditaaa",
+    "Ese no es el botón de sí, es el de la izquierda",
+    "Yo te recojoooo",
+    "Podemos hacer comiditaaa",
     "Marianaa ya casi es hora de que digas que sí",
     "No seas mal vibrosa, di que sí",
     "Bueno, última oportunidad",
