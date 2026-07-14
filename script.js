@@ -70,7 +70,7 @@ document.addEventListener("mousemove", (e) => {
 });
 
 azul.addEventListener("click", () => {
-    mensaje.textContent = "¡YEIII, paso por ti a las 3 pm, okei ? Ya te quiero ver ";
+    mensaje.textContent = "¡YEIII, Ya te quiero ver ";
     mensaje.style.opacity = "1";
     subtitulo.textContent =" Ja, Siempre lo supe";
     rojo.style.display = "none";
